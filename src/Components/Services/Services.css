@@ -45,6 +45,14 @@
     /* background-color: red; */
   }
 
+  .serviceCard img {
+    width: 50px;
+  }
+
+  .serviceCard > :nth-child(2) {
+    font-size: 16px;
+  }
+
   .serviceCard > :nth-child(3) {
     max-width: 400px;
     font-size: 15px;
