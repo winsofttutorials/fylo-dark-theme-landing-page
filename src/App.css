@@ -24,4 +24,46 @@
   /* (error) */
   --Light-Red: hsl(0, 100%, 63%);
   --White: hsl(0, 0%, 100%);
+  --Off-White: hsl(0, 0%, 80%);
+}
+
+.innerWidth {
+  width: 100%;
+  max-width: 1440px;
+}
+
+.padding {
+  padding: 20px 8%;
+}
+
+.flexCol {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flexColCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexColStart {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.flexColEnd {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+
+.primaryText {
+  color: var(--White);
+}
+
+.secondaryText {
+  color: var(--Off-White);
 }
