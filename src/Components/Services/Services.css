@@ -29,3 +29,25 @@
   margin: 20px;
   font-size: 14px;
 }
+
+@media (max-width: 375px) {
+  .s-wrapper {
+    padding: 10px 3%;
+    width: 100%;
+  }
+  .s-container {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .serviceCard {
+    padding: 20px 0;
+    /* background-color: red; */
+  }
+
+  .serviceCard > :nth-child(3) {
+    max-width: 400px;
+    font-size: 15px;
+    margin: 20px 0;
+  }
+}

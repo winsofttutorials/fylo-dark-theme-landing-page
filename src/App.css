@@ -77,7 +77,7 @@
 .button {
   padding: 12px 65px;
   color: var(--White);
-  background-color: var(--Cyan);
+  background-color: var(--Blue);
   font-size: 12px;
   transition: all 0.4s ease-in;
   outline: none;
@@ -89,5 +89,5 @@
 
 .button:hover {
   color: var(--White);
-  background-color: var(--Blue);
+  background-color: var(--Cyan);
 }

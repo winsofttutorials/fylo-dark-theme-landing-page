@@ -24,3 +24,28 @@
   line-height: 25px;
   margin-bottom: 30px;
 }
+
+@media (max-width: 375px) {
+  .hero-wrapper {
+    background: url("../images/bg-curvy-mobile.svg");
+    background-size: 100%;
+    background-position: bottom -40px left 10%;
+    background-repeat: no-repeat;
+    /* min-height: 100vh; */
+  }
+
+  .image-position img {
+    max-width: 300px;
+  }
+
+  .headerTitle {
+    font-size: 22px;
+    max-width: 300px;
+    line-height: 35px;
+  }
+
+  .subTitle {
+    font-size: 14px;
+    max-width: 300px;
+  }
+}
