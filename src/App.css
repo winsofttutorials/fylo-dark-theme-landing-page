@@ -10,13 +10,13 @@
 
 :root {
   /* (intro and email sign up background) */
-  --Dark-Blue: hsl(217, 28%, 15%);
+  --Dark-Blue-email: hsl(217, 28%, 15%);
   /* (main background) */
-  --Dark-Blue: hsl(218, 28%, 13%);
+  --Dark-Blue-bg: hsl(218, 28%, 13%);
   /* (footer background) */
-  --Dark-Blue: hsl(216, 53%, 9%);
+  --Dark-Blue-footer: hsl(216, 53%, 9%);
   /* (testimonials background) */
-  --Dark-Blue: hsl(219, 30%, 18%);
+  --Dark-Blue-testimonial: hsl(219, 30%, 18%);
   /* (inside call-to-action gradient) */
   --Cyan: hsl(176, 68%, 64%);
   /* (inside call-to-action gradient) */
@@ -25,6 +25,11 @@
   --Light-Red: hsl(0, 100%, 63%);
   --White: hsl(0, 0%, 100%);
   --Off-White: hsl(0, 0%, 80%);
+}
+
+.container {
+  background-color: var(--Dark-Blue-email);
+  min-height: 100vh;
 }
 
 .innerWidth {
@@ -62,8 +67,27 @@
 
 .primaryText {
   color: var(--White);
+  font-family: "Raleway", sans-serif;
 }
 
 .secondaryText {
   color: var(--Off-White);
+}
+
+.button {
+  padding: 12px 65px;
+  color: var(--White);
+  background-color: var(--Cyan);
+  font-size: 12px;
+  transition: all 0.4s ease-in;
+  outline: none;
+  border: 0;
+  border-radius: 25px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+}
+
+.button:hover {
+  color: var(--White);
+  background-color: var(--Blue);
 }

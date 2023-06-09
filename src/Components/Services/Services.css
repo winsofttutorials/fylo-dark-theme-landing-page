@@ -1,0 +1,31 @@
+.s-wrapper {
+  min-height: 100vh;
+  background-color: var(--Dark-Blue-bg);
+}
+
+.s-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.serviceInfo {
+  width: 100%;
+}
+.serviceCard {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.serviceCard > :nth-child(2) {
+  margin-top: 20px;
+}
+
+.serviceCard > :nth-child(3) {
+  max-width: 380px;
+  text-align: center;
+  margin: 20px;
+  font-size: 14px;
+}
