@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  /* (intro and email sign up background) */
+  --Dark-Blue-email: hsl(217, 28%, 15%);
+  /* (main background) */
+  --Dark-Blue-bg: hsl(218, 28%, 13%);
+  /* (footer background) */
+  --Dark-Blue-footer: hsl(216, 53%, 9%);
+  /* (testimonials background) */
+  --Dark-Blue-testimonial: hsl(219, 30%, 18%);
+  /* (inside call-to-action gradient) */
+  --Cyan: hsl(176, 68%, 64%);
+  /* (inside call-to-action gradient) */
+  --Blue: hsl(198, 60%, 50%);
+  /* (error) */
+  --Light-Red: hsl(0, 100%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Off-White: hsl(0, 0%, 80%);
+}
+
+.container {
+  background-color: var(--Dark-Blue-email);
+  min-height: 100vh;
+}
+
+.innerWidth {
+  width: 100%;
+  max-width: 1440px;
+}
+
+.padding {
+  padding: 20px 8%;
+}
+
+.flexCol {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flexColCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexColStart {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.flexColEnd {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+
+.primaryText {
+  color: var(--White);
+  font-family: "Raleway", sans-serif;
+}
+
+.secondaryText {
+  color: var(--Off-White);
+}
+
+.button {
+  padding: 12px 65px;
+  color: var(--White);
+  background-color: var(--Blue);
+  font-size: 12px;
+  transition: all 0.4s ease-in;
+  outline: none;
+  border: 0;
+  border-radius: 25px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+}
+
+.button:hover {
+  color: var(--White);
+  background-color: var(--Cyan);
+}
