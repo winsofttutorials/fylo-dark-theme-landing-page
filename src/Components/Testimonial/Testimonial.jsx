@@ -5,7 +5,6 @@ import testimony from "../../../Util/test-info.json";
 import { sliderSettings } from "../../../Util/SliderSettings";
 import "swiper/swiper.css";
 import quote from "../images/bg-quotes.png";
-import Subscribe from "../Subscribe/Subscribe";
 
 const Testimonial = () => {
   const [email, setEmail] = useState("");
