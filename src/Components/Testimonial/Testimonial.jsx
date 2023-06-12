@@ -1,17 +1,18 @@
 import React from "react";
 import "./Testimonial.css";
-import { register } from "swiper/element/bundle";
-import testimony from "../../../Util/testimonial.json";
+import { Swiper, SwiperSlide } from "swiper/react";
+import testimony from "../../../Util/test.json";
 import { sliderSettings } from "../../../Util/SliderSettings";
-import "swiper/css";
+import "swiper/swiper.min.css";
+
 const Testimonial = () => {
   return (
     <>
       <section className="t-wrapper">
         <div className="padding t-container">
-          <swiper-container>
+          <Swiper {...sliderSettings}>
             {testimony.map((card, i) => {
-              <swiper-slide key={i}>
+              <SwiperSlide key={i}>
                 <div className="t-card">
                   <p>{card.test}</p>
                   <div className="userProfile">
@@ -22,13 +23,12 @@ const Testimonial = () => {
                     </div>
                   </div>
                 </div>
-              </swiper-slide>;
+              </SwiperSlide>;
             })}
-          </swiper-container>
+          </Swiper>
         </div>
       </section>
     </>
   );
 };
-register();
 export default Testimonial;
